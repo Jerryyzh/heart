@@ -8,12 +8,12 @@ import streamlit as st
 model = joblib.load("heart_disease_model.joblib")
 
 st.set_page_config(
-    page_title="Heart appi",
+    page_title="Sydän appi",
     page_icon="❤️",
     layout="centered"
 )
 
-st.title("Heart appi")
+st.title("Sydän appi")
 st.write(
     "Enter the patient characteristics below to obtain "
     "a model-estimated probability of heart disease."
