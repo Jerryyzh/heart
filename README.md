@@ -18,7 +18,7 @@ A machine learning project that predicts the probability of heart disease using 
    pip install -r requirements.txt
    ```
 
-3. Start the application:
+3. Start the application: Open terminal in the folder and run command
 
    ```bash
    streamlit run app.py
