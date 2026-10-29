@@ -119,6 +119,12 @@ if submitted:
     }])
 
     probability = model.predict_proba(patient)[0, 1]
+    threshold = 0.40
+    prediction = int(probability >= threshold)
+    if prediction == 1:
+        st.write("Model classification: Disease detected (1)")
+    else:
+        st.write("Model classification: Disease not detected (0)")
 
     st.subheader("Prediction result")
     st.metric(
